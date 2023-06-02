@@ -2,7 +2,7 @@
     <?php include './page/user/userModal.php'?> 
     <div class="col-md-12"> 
         <table id="example" class="table">
-            <thead>
+            <thead class="table-dark">
                 <tr>
                 <th>ชื่อกิจกรรม</th>
                 <th>รหัสนักศึกษา</th>

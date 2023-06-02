@@ -30,6 +30,7 @@ body {
   
 .login-box .user-box {
     position: relative;
+    font-family: 'Prompt', sans-serif;
 }
   
 .login-box .user-box input {
@@ -43,6 +44,7 @@ body {
     outline: none;
     background: transparent;
     border-radius : 10px;
+    
 }
 .login-box .user-box label {
     position: absolute;
@@ -62,6 +64,7 @@ body {
     left: 0;
     color: #d9e1e1;
     font-size: 13px;
+    
 }
 /* ปุ่มตกลง */
 button {
@@ -81,6 +84,7 @@ button {
     border-radius: 10px;
     font-weight: 500;
     color: var(--color);
+    font-family: 'Prompt', sans-serif;
    }
    
    button:before {
@@ -130,6 +134,7 @@ button {
     transition: 0.2s background;
     align-items: center;
     gap: 0.6em;
+    font-family: 'Prompt', sans-serif;
     
 }
 
@@ -180,6 +185,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Prompt', sans-serif;
 }
 
 .success{
@@ -189,6 +195,7 @@ button {
     color: white;
     background-image: linear-gradient(45deg, #20d520, #61dd61);
     box-shadow: 1px 1px 10px rgba(39, 207, 103, 0.916);
+    font-family: 'Prompt', sans-serif;
 }
 
 .error {
@@ -198,11 +205,13 @@ button {
     color: white;
     background-image: linear-gradient(45deg, #d52f20, #dd6c61);
     box-shadow: 1px 1px 10px rgba(207, 39, 39, 0.916);
+    font-family: 'Prompt', sans-serif;
 }
 
 a{
     text-decoration: none;
     color: white;
+    font-family: 'Prompt', sans-serif;
 }
 
 .bn31 {

@@ -12,6 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <!-- ฟอน -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500&family=Josefin+Sans&family=Prompt:wght@300&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="style.css">
 
@@ -49,12 +54,12 @@
   
         <div class="user-box">
             <input type="text" name='email'>
-            <label for="email">Email</label>
+            <label for="email">อีเมลผู้ดูแล</label>
         </div>
 
         <div class="user-box">
             <input type="password" name='password'>
-            <label for="password">Password</label>
+            <label for="password">รหัสผ่าน</label>
 
         <div class="login_regi">
             <button type="submit" name='login_admin' class="btt22">เข้าสู่ระบบผู้ดูแล</button>
@@ -63,5 +68,13 @@
 
     </form>
     
+
+
+
+
+     <!-- ฟอน -->
+     <style>
+     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500&family=Josefin+Sans&family=Prompt:wght@300&display=swap');
+    </style>
 </body>
 </html>

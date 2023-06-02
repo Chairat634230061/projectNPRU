@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Prompt', sans-serif;
 }
 body{
     background: #F0F2F5;
@@ -44,6 +45,7 @@ nav {
     color: white;
     text-decoration: none;
     transition: 0.3s;
+    
 }
 
 .stdeber-items:hover{
@@ -118,6 +120,7 @@ nav {
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 15px;
+  
 }
 
 .button-30:focus {
@@ -141,7 +144,7 @@ nav {
 }
 
 .col-md-12 {
-    padding: 0 20px 10px 10px;
+    padding: 0 0px 10px 10px;
     height: 100vh;
 }
 

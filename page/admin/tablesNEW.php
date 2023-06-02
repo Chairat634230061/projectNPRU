@@ -3,10 +3,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12"> 
+                <div class="bubu">
                 <h3>ข้อมูลนักศึกษา</h3>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">เพิ่มข้อมูลนักศึกษา</button>
+                </div>
                 <br>
                 <table id="example" class="table">
-                    <thead>
+                    <thead class="table-dark">
                         <tr>
                         <th>รหัสนักศึกษา</th>
                         <th>ชื่อจริงนักศึกษา</th>

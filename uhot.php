@@ -36,6 +36,12 @@
         $('#example').DataTable();
         } );
     </script>
+     <!-- ฟอน -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500&family=Josefin+Sans&family=Prompt:wght@300&display=swap" rel="stylesheet">
+
+    
 
             <?php include './page/user/user.php'?>
 </head>
@@ -51,6 +57,12 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+ <!-- ฟอน -->
+ <style>
+     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500&family=Josefin+Sans&family=Prompt:wght@300&display=swap');
+    </style>
+
 <!-- โชว์ตัวอย่างรูป -->
 <script>
         let imgInput = document.getElementById('imgInput');
@@ -64,6 +76,6 @@
         }
 
     </script>
-    
+
 </body>
 </html>

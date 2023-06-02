@@ -5,8 +5,6 @@
         <a href="adminHome.php" class ="stdeber-student" >ย้อนกลับ</a>
         <br>
         
-         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">เพิ่มข้อมูลนักศึกษาเข้าระบบ</button>
-    
         <div class = "crud1">
         
         <div class = "crud2">

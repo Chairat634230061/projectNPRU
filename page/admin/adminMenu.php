@@ -1,6 +1,7 @@
 <div class = "conta">
 
         <div class ="stdeber">
+          <p class = "adHome">ข้อมูลพื้นฐาน</p>
         <a href="adminHome.php" class ="stdeber-items" ><img src="./img/home2.png" alt="หน้าหลัก" class = "imghome">หน้าหลัก</a>
         <a href="adminActivity.php" class ="stdeber-items" ><img src="./img/activity1.png" alt="ประเภทกิจกรรม" class = "imghome">กิจกรรม</a>
         <a href="....." class ="stdeber-items" ><img src="./img/group1.png" alt="คณะ" class = "imghome">คณะ</a>

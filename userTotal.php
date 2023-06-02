@@ -37,6 +37,11 @@
         } );
     </script>
 
+     <!-- ฟอน -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500&family=Josefin+Sans&family=Prompt:wght@300&display=swap" rel="stylesheet">
+
             <?php include './page/user/user.php'?>
 </head>
 <body>
@@ -52,6 +57,9 @@
 
 
 
-        
+      <!-- ฟอน -->
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500&family=Josefin+Sans&family=Prompt:wght@300&display=swap');
+    </style>   
 </body>
 </html>

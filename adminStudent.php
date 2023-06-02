@@ -1,5 +1,5 @@
 <?php 
-
+    require_once "server.php";
     session_start();
     if (!isset($_SESSION['admin_login'])) {
         $_SESSION['error'] = 'กรุณาเข้าสู่ระบบ!';
