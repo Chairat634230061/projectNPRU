@@ -160,8 +160,31 @@ nav {
     font-family: 'Noto Sans Thai', sans-serif;
     font-family: 'Prompt', sans-serif; ;
 }
+/*  student  tab */
+.TBN{
+   width: 100%;
+}
 
+.stdeber-student{
+    background-image: linear-gradient(-45deg, #141714, #2a552a);
+    margin-bottom: 4px;
+    padding: 15px 15px;
+    border-radius: 15px;
+    border: 1px solid #569a56(216, 208, 208);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
+.stdeber-student:hover{
+    background-image: linear-gradient(-45deg, #a0b9a0, #274f27);
+    color: white;
+    border: 4px solid  #d7e0d7;
+}
+.pBA {
+    color: #474b4aa0;
+    font-size: 19px;
+}
   
 
 

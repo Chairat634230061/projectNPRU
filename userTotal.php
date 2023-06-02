@@ -4,12 +4,12 @@
     require_once 'server.php';
     if (!isset($_SESSION['user_login'])) {
         $_SESSION['error'] = 'กรุณาเข้าสู่ระบบ!';
-        header('location: login.php');
+        header('location: login_user.php');
     }
    
      if (isset($_SESSION['user_login'])) {
         $admin_id = $_SESSION['user_login'];
-        $stmt = $conn->query("SELECT * FROM user WHERE id = $admin_id");
+        $stmt = $conn->query("SELECT * FROM studentuser WHERE id = $admin_id");
         $stmt->execute();
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
     }
@@ -52,6 +52,6 @@
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
 </body>
 </html>

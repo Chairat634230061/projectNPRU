@@ -4,13 +4,13 @@
 
     if (!isset($_SESSION['email'])) {  /*ถ้าไม่มีการล็อคอินเข้ามาให้ไปที่หน้าล็อคอืน*/ 
         $_SESSION['msg'] = "You must log in first";
-        header('location: login.php');
+        header('location: loginHome.php');
     }
 
     if (isset($_GET['logout'])) {    /*ถ้ามีการกดล็อคเอ้าจะกลับไปหาล็อคอิน*/ 
         session_destroy();
         unset($_SESSION['email']);
-        header('location: login.php');
+        header('location: loginHome.php');
     }
 
 ?>  

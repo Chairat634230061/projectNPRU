@@ -57,11 +57,12 @@
             <label for="password">Password</label>
 
         <div class="login_regi">
-            <button type="submit" name='login_user' class="bn30">ตกลง</button>
-            
+            <button type="submit" name='login_user' class="btt22">เข้าสู่ระบบนักศึกษา</button>
+    </div>
+</button>
         </div>
-
-
+        
+        
     </form>
     
 </body>

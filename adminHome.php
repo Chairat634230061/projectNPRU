@@ -3,7 +3,7 @@
     session_start();
     if (!isset($_SESSION['admin_login'])) {
         $_SESSION['error'] = 'กรุณาเข้าสู่ระบบ!';
-        header('location: login.php');
+        header('location: login_admin.php');
     }
 
 ?>
