@@ -8,7 +8,9 @@
                 <th>รหัสนักศึกษา</th>
                 <th>ชั่วโมงทั้งหมด</th>
                 <th>วัน/เวลาที่บันทึก</th>
-                <th>รูป</th>
+                <th>รูปภาพ</th>
+                <th>อธิบายรายละเอียด</th>
+                <th>สถานนะ</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,8 +28,10 @@
             <td><?php echo $k['studentID']; ?></td>
             <td><?php echo $k['collect_hours']; ?></td>
             <td><?php echo $k['name_time']; ?></td>
-            <td width="150px"  ><img class="rounded" width="100%"  src="uploadsIMG/<?php echo $k['img']; ?>" alt=""></td>
-            </tr>
+            <td width="150px" ><img class="rounded" width="100%"  src="uploadsIMG/<?php echo $k['img']; ?>" alt=""></td>
+            <td><?php echo $k['name_message']; ?></td>
+            <td><?php echo $k['user_status']; ?></td>
+        </tr>
             <?php } ?>
         </tbody>
         </table>

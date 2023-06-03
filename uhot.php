@@ -74,8 +74,6 @@
                     previewImg.src = URL.createObjectURL(file)
             }
         }
-
     </script>
-
 </body>
 </html>

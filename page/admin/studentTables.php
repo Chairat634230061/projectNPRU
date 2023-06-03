@@ -15,6 +15,7 @@
                         <th>ชื่อจริงนักศึกษา</th>
                         <th>นามสกุลนักศึกษา</th>
                         <th>Email</th>
+                        <th>แก้ไข</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -33,7 +34,11 @@
                     <td><?php echo $k['firstname']; ?></td>
                     <td><?php echo $k['lastname']; ?></td>
                     <td><?php echo $k['email']; ?></td>
-                    </tr>
+                    <td>
+                    <a data-bs-toggle="modal" data-bs-target="#editUserModal" href="#<?php echo $k['id']; ?>" class="btn btn-warning">Edit</a>
+                    <a data-id="<?= $k['id']; ?>" href="?delete=<?= $k['id']; ?>" class="btn btn-danger delete-btn">Delete</a></td>
+                    </td>
+                </tr>
                     <?php } ?>
                 </tbody>
                 </table>

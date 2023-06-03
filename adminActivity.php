@@ -17,7 +17,6 @@
         $deletestmt->execute();
 
         if ($deletestmt) {
-            echo "<script>alert('Data has been deleted successfully');</script>";
             $_SESSION['success'] = "Data has been deleted successfully";
             echo "<script>
             $(document).ready(function() {
@@ -66,9 +65,19 @@
     
 <div class = 'contaAct'>
 
-<div class = 'avti'>
+<div class = 'stdeber'>
     <p>เมนู</p>
-    <a href="adminHome.php" class = 'back'>ย้อนกลับ</a>
+        <a href="adminActivity.php" class ="Databutton" >กิจกรรม</a>
+        <a href="adminTeacher.php" class ="Databutton" >ผู้ดูแล</a>
+        <a href="adminStudent.php" class ="Databutton" >นักศึกษา</a>
+        
+        <br>
+        <hr noshade>
+    <div >
+  
+    <button class = "Databutton"><a href="adminHome.php">ข้อมูลรอยืนยัน</a></button> 
+  </div>
+
     </div>
     <?php include './page/admin/activityModal.php'?> 
     

@@ -68,11 +68,16 @@ if (is_uploaded_file($_FILES['img']['tmp_name'])) {
 if (isset($_POST['submit'])) {
     $name_activity = $_POST['name_activity'];
     $collect_hours = $_POST['collect_hours'];
+    $name_location = $_POST['name_location'];
+    $name_teacher = $_POST['name_teacher'];
    
 
-    $sql = $conn->prepare("INSERT INTO podo(name_activity, collect_hours) VALUES(:name_activity, :collect_hours)");
+    $sql = $conn->prepare("INSERT INTO podo(name_activity, collect_hours, name_location, name_teacher) 
+    VALUES(:name_activity, :collect_hours, :name_location, :name_teacher)");
     $sql->bindParam(":name_activity", $name_activity);
     $sql->bindParam(":collect_hours", $collect_hours);
+    $sql->bindParam(":name_location", $name_location);
+    $sql->bindParam(":name_teacher", $name_teacher);
     $sql->execute();
 
         if ($sql) {

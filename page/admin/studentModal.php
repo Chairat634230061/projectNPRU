@@ -1,9 +1,16 @@
 <div class = "conta">
     <div class ="stdeber">
-        <p class = "pBA">เมนู</p>
-        <a href="adminStudent.php" class ="stdeber-student" >รายชื่อนักศึกษา</a>
-        <a href="adminHome.php" class ="stdeber-student" >ย้อนกลับ</a>
+        <p>เมนู</p>
+        <a href="adminActivity.php" class ="Databutton" >กิจกรรม</a>
+        <a href="adminTeacher.php" class ="Databutton" >ผู้ดูแล</a>
+        <a href="adminStudent.php" class ="Databutton" >นักศึกษา</a>
+        
         <br>
+        <hr noshade>
+    <div >
+  
+    <button class = "Databutton"><a href="adminHome.php">ข้อมูลรอยืนยัน</a></button> 
+  </div>
         
         <div class = "crud1">
         
@@ -62,7 +69,7 @@
 </div>
 
     <div class="TBN">
-    <?php include './page/admin/tablesNEW.php'?>
+    <?php include './page/admin/studentTables.php'?>
     </div>
 </div>
 

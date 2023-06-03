@@ -10,6 +10,7 @@ if (isset($_POST['submituser'])) {
     $user_activity = $_POST['user_activity'];
     $studentID = $_POST['studentID'];
     $collect_hours = $_POST['collect_hours'];
+    $name_message = $_POST['name_message'];
     $img = $_FILES['img'];
 
     $allow = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
@@ -22,11 +23,13 @@ if (isset($_POST['submituser'])) {
         if ($img['size'] > 0 && $img['error'] == 0) {
             if (move_uploaded_file($img['tmp_name'], $filePath)) {
 
-    $sql = $conn->prepare("INSERT INTO info_student(user_activity, studentID, collect_hours, img) VALUES(:user_activity, :studentID, :collect_hours, :img)");
+    $sql = $conn->prepare("INSERT INTO info_student(user_activity, studentID, collect_hours, img, name_message) 
+    VALUES(:user_activity, :studentID, :collect_hours, :img, :name_message)");
     $sql->bindParam(":user_activity", $user_activity);
     $sql->bindParam(":studentID", $studentID);
     $sql->bindParam(":collect_hours", $collect_hours);
     $sql->bindParam(":img", $fileNew);
+    $sql->bindParam(":name_message", $name_message);
     $sql->execute();
 
         if ($sql) {

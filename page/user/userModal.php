@@ -37,9 +37,13 @@
             <input type="text" class="form-control" name="collect_hours" required>
           </div>
           <div class="mb-3">
-            <label for="img" class="col-form-label">รูป</label>
+            <label for="img" class="col-form-label">รูปภาพ</label>
             <input type="file" class="form-control" id="imgInput" name="img" >
             <img width = "100%" id="previewImg" alt="">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="col-form-label">อธิบายรายละเอียดการเข้าร่วม</label>
+            <textarea class="form-control" id="message-text" name="name_message"></textarea>
           </div>
 
          <div class="modal-footer">
