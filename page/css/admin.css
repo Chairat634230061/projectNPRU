@@ -63,46 +63,7 @@ nav {
    border-right: solid 1px #eef3f1;
    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
    /*border-bottom: solid 3px #1e2d15;*/
-   
-
-
 }
-
-.stdeber-items{
-    background-image: linear-gradient(-45deg, #141714, #2a552a);
-    margin-bottom: 4px;
-    padding: 0.30rem 1rem;
-    border-radius: 10px;
-    border: 1px solid #569a56(216, 208, 208);
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-    
-}
-
-.stdeber-items:hover{
-    background-image: linear-gradient(-45deg, #a0b9a0, #274f27);
-    color: white;
-    border: 4px solid  #d7e0d7;
-}
-.pro1 {
-    /*background: red;*/
-    text-align: right;
-}
-
-.card {
-    max-width: 210px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px;
-    border: 1px solid rgba(255, 255, 255, .25);
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.45);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px);
-    
-  }
 
 .bacard{
     padding: 10px 10px;
@@ -216,7 +177,7 @@ p{
     -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
     clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
     height: 50px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 52px;
     letter-spacing: 1.2px;
     transition: .2s .1s;

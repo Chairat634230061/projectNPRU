@@ -9,7 +9,7 @@
                 <table id="example" class="table">
                     <thead class="table-dark">
                         <tr>
-                        <th>ID</th>
+                        <th>ลำดับ</th>
                         <th>ชื่อกิจกรรม</th>
                         <th>จำนวนชั่วโมงทั้งหมด</th>
                         <th>สถานที่</th>

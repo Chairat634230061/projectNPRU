@@ -23,6 +23,7 @@
             <label for="name_location" class="col-form-label">สถานที่</label>
             <input type="text" class="form-control" name="name_location" required>
           </div>
+          
           <div class="mb-3">
             <label for="name_teacher" class="col-form-label">ผู้ดูแล</label>
             <input type="text" class="form-control" name="name_teacher" required>
@@ -64,7 +65,7 @@
        ?>
 
        <div class="mb-3">
-           <label for="id" class="col-form-label">ID</label>
+           <label for="id" class="col-form-label">ลำดับ</label>
            <input type="text" value="<?php echo $k['id']; ?>" class="form-control" name="id" required>
          </div>
        <div class="mb-3">

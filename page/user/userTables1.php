@@ -4,13 +4,14 @@
         <table id="example" class="table">
             <thead class="table-dark">
                 <tr>
+                <th>ลำดับ</th>
                 <th>ชื่อกิจกรรม</th>
                 <th>รหัสนักศึกษา</th>
                 <th>ชั่วโมงทั้งหมด</th>
                 <th>วัน/เวลาที่บันทึก</th>
                 <th>รูปภาพ</th>
                 <th>อธิบายรายละเอียด</th>
-                <th>สถานนะ</th>
+                <th>สถานนะรอยืนยัน</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,6 +25,7 @@
             foreach($result as $k) {
             ?>
             <tr>
+            <td><?php echo $k['id']; ?></td>
             <td><?php echo $k['user_activity']; ?></td>
             <td><?php echo $k['studentID']; ?></td>
             <td><?php echo $k['collect_hours']; ?></td>

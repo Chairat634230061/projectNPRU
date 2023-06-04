@@ -7,13 +7,17 @@ require_once "server.php";
 
 if (isset($_POST['update'])) {
         $id = $_POST['id'];
-        $name_activity = $_POST['name_activity'];
-        $collect_hours = $_POST['collect_hours'];
+        $firstname = $_POST['firstname'];
+        $lastname = $_POST['lastname'];
+        $number = $_POST['number'];
+        $email = $_POST['email'];
 
-        $sql = $conn->prepare("UPDATE podo SET name_activity = :name_activity, collect_hours = :collect_hours WHERE id = :id");
+        $sql = $conn->prepare("UPDATE user SET firstname = :firstname, lastname = :lastname, number = :number, email = :email WHERE id = :id");
         $sql->bindParam(":id", $id);
-        $sql->bindParam(":name_activity", $name_activity);
-        $sql->bindParam(":collect_hours", $collect_hours);
+        $sql->bindParam(":firstname", $firstname);
+        $sql->bindParam(":lastname", $lastname);
+        $sql->bindParam(":number", $number);
+        $sql->bindParam(":email", $email);
         $sql->execute();
 
         if ($sql) {
@@ -28,7 +32,7 @@ if (isset($_POST['update'])) {
                 });
             })
         </script>";
-        header("refresh:2; url=adminActivity.php");
+        header("refresh:2; url=adminTeacher.php");
         } else {
             $_SESSION['error'] = "";
             echo "<script>
@@ -41,7 +45,7 @@ if (isset($_POST['update'])) {
                 });
             })
         </script>";
-        header("refresh:2; url=adminActivity.php");
+        header("refresh:2; url=adminTeacher.php");
         }
     }
 ?>

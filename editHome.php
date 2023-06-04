@@ -7,13 +7,12 @@ require_once "server.php";
 
 if (isset($_POST['update'])) {
         $id = $_POST['id'];
-        $name_activity = $_POST['name_activity'];
-        $collect_hours = $_POST['collect_hours'];
+        $user_status = $_POST['user_status'];
 
-        $sql = $conn->prepare("UPDATE podo SET name_activity = :name_activity, collect_hours = :collect_hours WHERE id = :id");
+
+        $sql = $conn->prepare("UPDATE info_student SET user_status = :user_status WHERE id = :id");
         $sql->bindParam(":id", $id);
-        $sql->bindParam(":name_activity", $name_activity);
-        $sql->bindParam(":collect_hours", $collect_hours);
+        $sql->bindParam(":user_status", $user_status);
         $sql->execute();
 
         if ($sql) {
@@ -28,7 +27,7 @@ if (isset($_POST['update'])) {
                 });
             })
         </script>";
-        header("refresh:2; url=adminActivity.php");
+        header("refresh:2; url=adminHome.php");
         } else {
             $_SESSION['error'] = "";
             echo "<script>
@@ -41,7 +40,7 @@ if (isset($_POST['update'])) {
                 });
             })
         </script>";
-        header("refresh:2; url=adminActivity.php");
+        header("refresh:2; url=adminHome.php");
         }
     }
 ?>

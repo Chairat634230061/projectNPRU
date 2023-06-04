@@ -1,16 +1,15 @@
-</head>
-<body>
-    <div class="container">
+<div class="container">
         <div class="row">
             <div class="col-md-12"> 
                 <div class="bubu">
                 <h3>ข้อมูลนักศึกษา</h3>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">เพิ่มข้อมูลนักศึกษา</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">เพิ่มข้อมูลผู้ดูแล</button>
                 </div>
                 <br>
                 <table id="example" class="table">
                     <thead class="table-dark">
-                        <tr>
+                    <tr>
+                        <th>ลำดับ</th>
                         <th>รหัสนักศึกษา</th>
                         <th>ชื่อจริงนักศึกษา</th>
                         <th>นามสกุลนักศึกษา</th>
@@ -30,6 +29,7 @@
                     ?>
 
                     <tr>
+                    <td><?php echo $k['id']; ?></td>
                     <td><?php echo $k['studentID']; ?></td>
                     <td><?php echo $k['firstname']; ?></td>
                     <td><?php echo $k['lastname']; ?></td>

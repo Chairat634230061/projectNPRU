@@ -1,3 +1,5 @@
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <?php 
     require_once "server.php";
     session_start();
@@ -6,6 +8,30 @@
         header('location: login_admin.php');
     }
 
+     /* ---delete---  */ 
+
+     if (isset($_GET['delete'])) {
+        $delete_id = $_GET['delete'];
+        $deletestmt = $conn->query("DELETE FROM info_student WHERE id = $delete_id");
+        $deletestmt->execute();
+
+        if ($deletestmt) {
+            $_SESSION['success'] = "Data has been deleted successfully";
+            echo "<script>
+            $(document).ready(function() {
+                Swal.fire({
+                    title: 'ลบข้อมูลนี้เรียบร้อย',
+                    icon: 'success',
+                    timer: 5000,
+
+                });
+            })
+        </script>";
+        header("refresh:10; url=adminActivity.php");
+           
+        
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

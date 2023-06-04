@@ -46,6 +46,10 @@
             <textarea class="form-control" id="message-text" name="name_message"></textarea>
           </div>
 
+          </select>
+          
+          
+
          <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
         <button type="submituser" name ="submituser" class="btn btn-success" value="submituser">เพิ่มข้อมูล</button>
