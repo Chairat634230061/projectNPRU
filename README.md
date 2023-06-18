@@ -1,11 +1,11 @@
-# Project of NPRU
+# DEMO Project of NPRU
 
 
 ## Github
 
 ```
 git init
-git add README.md
+git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Chairat634230061/projectNPRU.git
